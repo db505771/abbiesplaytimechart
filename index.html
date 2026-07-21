@@ -7,7 +7,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
-      background-color: #000000;
+      background-color: transparent; /* Made background transparent */
       color: white;
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -161,7 +161,7 @@
       const ctx = document.getElementById("chart").getContext("2d");
       if (chart) chart.destroy();
       const gradient = ctx.createLinearGradient(0, 0, 0, 200);
-      gradient.addColorStop(0, "rgba(255, 255, 255, 0.4)");
+      gradient.addColorStop(0, "rgba(255, 255, 255, 0.35)");
       gradient.addColorStop(1, "rgba(255, 255, 255, 0)");
 
       chart = new Chart(ctx, {
